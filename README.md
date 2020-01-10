@@ -37,7 +37,7 @@ or
 
 `e.g`
 
-    let liteframe-core  = require("liteframe-core");
+    let liteframe_core  = require("liteframe-core");
 
     liteframe-core.inject([{sample : { one: "I am a sample injected value"}}]);
 
