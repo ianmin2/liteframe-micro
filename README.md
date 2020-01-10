@@ -50,7 +50,7 @@ or
     In progress at  [liteframe-core.bixbyte.io](http://liteframe-core.bixbyte.io)
 
 [npm-image]: https://img.shields.io/npm/v/liteframe.svg
-[npm-url]: https://npmjs.org/package/liteframe
+[npm-url]: https://npmjs.org/package/liteframe-core
 [downloads-image]: https://img.shields.io/npm/dm/liteframe.svg
 [downloads-url]: https://npmjs.org/package/liteframe-core
 [linux-image]: https://img.shields.io/travis/ianmin2/liteframe-core/master.svg?label=linux
