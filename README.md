@@ -19,8 +19,7 @@ A flexible lightweight framework with the bare minimums and networking capabilit
 
 ----
 ### **Documentation** 
-    In progress at  
-[liteframe.bixbyte.io](http://liteframe-core.bixbyte.io)
+    In progress at  [liteframe-core.bixbyte.io](http://liteframe-core.bixbyte.io)
 
 [npm-image]: https://img.shields.io/npm/v/liteframe.svg
 [npm-url]: https://npmjs.org/package/liteframe
