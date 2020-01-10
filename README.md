@@ -26,6 +26,26 @@ or
 > npm install -g liteframe-core
 
 ----
+
+Extending the framework can be done by
+
+    .inject("extension_key",extension_object_value);
+
+or
+
+    .inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
+
+>   e.g
+
+    let liteframe-core  = require("liteframe-core");
+
+    liteframe-core.inject([{sample : { one: "I am a sample injected value"}}]);
+
+    console.log(liteframe-core.sample);
+
+    //prints `I am a sample injected value`
+
+----
 ### **Documentation** 
     In progress at  [liteframe-core.bixbyte.io](http://liteframe-core.bixbyte.io)
 
