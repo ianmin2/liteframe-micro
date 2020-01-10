@@ -35,7 +35,7 @@ or
 
     .inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
 
->   e.g
+`e.g`
 
     let liteframe-core  = require("liteframe-core");
 
