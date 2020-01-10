@@ -14,8 +14,11 @@ A flexible lightweight framework with the bare minimums and networking capabilit
 <!-- [![Linux Version][linux-image]][npm-url] -->
 
 Extending the framework can be done by
+
     .inject("extension_key",extension_object_value);
+
 or
+
     .inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
 
 ----
