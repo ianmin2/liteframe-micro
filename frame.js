@@ -7,19 +7,7 @@ console.log(d);
 //@ Allow framework functionality injection [this method does not allow explicit module content overwriting]
 // inject("extension_key",extension_object_value);
 // inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
-let framify = {
-    icons : {
-        check           : `✔️`,
-        cross           : `❌`,
-        stop            : `🛑`,
-        notice          : `📢`,
-        warning         : `⚠️`,
-        fire            : `🔥`,
-        bomb            : `💣`,
-        copyright       : `©️`,
-        trademark       : `™️`,
-        reqistered      : `®️`
-    },
+let framify = {   
     inject : function( nom, objet ) 
     {
         
