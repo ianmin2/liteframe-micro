@@ -1,14 +1,28 @@
 let v = JSON.parse(require('fs').readFileSync(`${__dirname}/package.json`)).version;
-let d = `\n\t\t     @liteframe\n\t\t___________________\n\n\t\t  Version  ${v}\n\t\t___________________`;
+let d = `\n\t\t @liteframe-micro (${v})\n\t\t__________________________\n\n`;
 console.log(d);
+
+
 
 //@ Allow framework functionality injection [this method does not allow explicit module content overwriting]
 // inject("extension_key",extension_object_value);
 // inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
 let framify = {
-    ian : "intact",
+    icons : {
+        check           : `✔️`,
+        cross           : `❌`,
+        stop            : `🛑`,
+        notice          : `📢`,
+        warning         : `⚠️`,
+        fire            : `🔥`,
+        bomb            : `💣`,
+        copyright       : `©️`,
+        trademark       : `™️`,
+        reqistered      : `®️`
+    },
     inject : function( nom, objet ) 
     {
+        
         //@ Handle multiple definitions
         if(Array.isArray(nom))
         {

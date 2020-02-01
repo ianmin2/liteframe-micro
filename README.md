@@ -1,53 +1,24 @@
      _ _ _        __                          
-    | (_| |_ ___ / _|_ __ __ _ _ __ ___   ___        v.3
+    | (_| |_ ___ / _|_ __ __ _ _ __ ___   ___        v.0
     | | | __/ _ | |_| '__/ _` | '_ ` _ \ / _ \
-    | | | ||  __|  _| | | (_| | | | | | |  __/ -core
+    | | | ||  __|  _| | | (_| | | | | | |  __/ - micro
     |_|_|\__\___|_| |_|  \__,_|_| |_| |_|\___| 
                                     
 
-(https://www.npmjs.com/package/liteframe-core)
+(https://www.npmjs.com/package/liteframe-micro)
 
-A flexible lightweight framework with the bare minimums and networking capabilities
-
+A flexible lightweight yet extensible framework stripped down to the bare minimums
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 <!-- [![Linux Version][linux-image]][npm-url] -->
 
-Extending the framework can be done by
-
-    .inject("extension_key",extension_object_value);
-
-or
-
-    .inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
-
 ----
 ### **To install**
-> npm install -g liteframe-core
-
-----
-
-Extending the framework can be done by
-
-    .inject("extension_key",extension_object_value);
-
-or
-
-    .inject([{extension_key:extension_object_value},{extension_key:extension_object_value}]);
-
-`e.g`
-
-    let liteframe_core  = require("liteframe-core");
-
-    liteframe-core.inject([{sample : { one: "I am a sample injected value"}}]);
-
-    console.log(liteframe-core.sample);
-
-    //prints `I am a sample injected value`
+> npm install -g liteframe-micro
 
 ----
 ### **Documentation** 
-    In progress at  [liteframe-core.bixbyte.io](http://liteframe-core.bixbyte.io)
+    In progress at  [liteframe-micro.bixbyte.io](http://liteframe-micro.bixbyte.io)
 
 [npm-image]: https://img.shields.io/npm/v/liteframe.svg
 [npm-url]: https://npmjs.org/package/liteframe-core

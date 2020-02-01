@@ -18,13 +18,17 @@
     exports.c                   = require("colors");
     exports.fse                 = require("fs-extra"); 
     
+    /*
     exports.zip                 = require("adm-zip");
     exports.targz               = require("tar"); 
     exports.compression         = require("compression");
+    */
 
+    /*
     exports.request             = require("request");
     exports.qs                  = require("querystring");
     exports.request_promise     = require("request-promise");
+    */
 
     //@ Store the path to the user directory
     exports.home                = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE);
@@ -40,13 +44,16 @@
                                 });
 
     //** SERVER HANDLING MODULES
+    /*
     exports.bodyParser          = require("body-parser");
     exports.express             = require("express");
     exports.multer              = require("multer");
     exports.socket	            = require("socket.io");
     exports.ejs                 = require("ejs");
+    */
 
     //** AUTHENTICATION MODULES
+    /*
     exports.passport         = require("passport");
     let passport_jwt         = require("passport-jwt");
     passport_jwt.ExtractJwt.fromAuthHeader   = () =>
@@ -56,6 +63,7 @@
     exports.passport_jwt     = passport_jwt; 
     exports.nJwt             = require("njwt");
     exports.jwt              = require("jsonwebtoken");
+    */
    
 /**
     EO - BASIC IMPORTS
