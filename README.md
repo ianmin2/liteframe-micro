@@ -7,7 +7,7 @@
 
 (https://www.npmjs.com/package/liteframe-micro)
 
-A flexible lightweight yet extensible framework stripped down to the bare minimums
+The bare minimums of the liteframe framework 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 <!-- [![Linux Version][linux-image]][npm-url] -->
@@ -18,13 +18,13 @@ A flexible lightweight yet extensible framework stripped down to the bare minimu
 
 ----
 ### **Documentation** 
-    In progress at  [liteframe-micro.bixbyte.io](http://liteframe-micro.bixbyte.io)
+    In progress at  [liteframe.bixbyte.io](http://liteframe.bixbyte.io)
 
 [npm-image]: https://img.shields.io/npm/v/liteframe.svg
-[npm-url]: https://npmjs.org/package/liteframe-core
+[npm-url]: https://npmjs.org/package/liteframe-micro
 [downloads-image]: https://img.shields.io/npm/dm/liteframe.svg
-[downloads-url]: https://npmjs.org/package/liteframe-core
-[linux-image]: https://img.shields.io/travis/ianmin2/liteframe-core/master.svg?label=linux
-[windows-image]: https://img.shields.io/appveyor/ci/dougwilson/liteframe-core/master.svg?label=windows
+[downloads-url]: https://npmjs.org/package/liteframe-micro
+[linux-image]: https://img.shields.io/travis/ianmin2/liteframe-micro/master.svg?label=linux
+[windows-image]: https://img.shields.io/appveyor/ci/dougwilson/liteframe-micro/master.svg?label=windows
 
-[test-image]: https://img.shields.io/coveralls/ianmin2/liteframe-core/master.svg
+[test-image]: https://img.shields.io/coveralls/ianmin2/liteframe-micro/master.svg

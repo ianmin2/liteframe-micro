@@ -1,3 +1,4 @@
+exports.isRegex = exports._IS_REGEX = input => Object.prototype.toString.call(input) === '[object RegExp]';
 
 //!EMAIL VERIFICATION
 exports.mailRegex = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/ig;
@@ -9,7 +10,7 @@ exports.passRegex = /^[-@./\!\$\%\^|#&,+\w\s]{6,50}$/ig;
 exports.userRegex = /^[a-z0-9_-]{4,16}$/ig;
 
 //!TELEPHONE VERIFICATION
-exports.telRegex  = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/igm;
+exports.telRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/igm;
 
 //!IS FILLED VERIFICATION
 exports.isFilled = /[.+]/ig;
@@ -31,8 +32,8 @@ let RemoveMatch = function(originalArray, regex) {
     }
     return originalArray;
 };
-exports.removeMatch = exports.removeMatching = (arr,regx) => {
-	return new RemoveMatch(arr,regx);
+exports.removeMatch = exports.removeMatching = (arr, regx) => {
+    return new RemoveMatch(arr, regx);
 };
 
 //@ KEEP MATCHING
@@ -46,6 +47,6 @@ let KeepMatch = function(originalArray, regex) {
     }
     return originalArray;
 };
-exports.keepMatch = exports.keepMatching = (arr,regx) => {
-	return new KeepMatch(arr,regx);
+exports.keepMatch = exports.keepMatching = (arr, regx) => {
+    return new KeepMatch(arr, regx);
 };

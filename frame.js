@@ -1,8 +1,4 @@
-let v = JSON.parse(require('fs').readFileSync(`${__dirname}/package.json`)).version;
-let d = `\n\t\t @liteframe-micro (${v})\n\t\t__________________________\n\n`;
-console.log(d);
-
-
+/*
 
 //@ Allow framework functionality injection [this method does not allow explicit module content overwriting]
 // inject("extension_key",extension_object_value);
@@ -85,3 +81,20 @@ let framify = {
 Object.assign( framify, require( require("path").join( __dirname, `essentials/essentials.es6`) )  );
 
 module.exports = framify;
+
+*/
+
+function LiteFrameMicro(announce = true) {
+
+    if (announce) {
+        console.log(`
+        @liteframe-micro (${JSON.parse(require('fs').readFileSync(`${__dirname}/package.json`)).version})
+        __________________________
+            
+        `);
+    }
+    
+    require(require("path").join(__dirname, `essentials/essentials.es6`));
+}
+
+module.exports = LiteFrameMicro;

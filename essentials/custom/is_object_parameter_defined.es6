@@ -1,37 +1,29 @@
-const isDefined 
-=  function( object, paramsArray )
-{
+const isDefined = function(object, paramsArray) {
 
-	let retval = true;
+    let retval = true;
 
-	let process = function( )
-	{
-	    paramsArray.forEach(function(param) {
-		let currParam = object[param]
-		if( currParam == undefined || !currParam ){
-		    retval = false;
-		}
-	    }, this);
-	    return retval;
-	};
+    let process = function() {
+        paramsArray.forEach(function(param) {
+            let currParam = object[param]
+            if (currParam == undefined || !currParam) {
+                retval = false;
+            }
+        }, this);
+        return retval;
+    };
 
-	if( !Array.isArray(paramsArray) )
-	{
-	    paramsArray = (typeof(paramsArray) == "string") ?  paramsArray.split(",") : undefined;
+    if (!Array.isArray(paramsArray)) {
+        paramsArray = (typeof(paramsArray) == "string") ? paramsArray.split(",") : undefined;
 
-		return (!paramsArray) ? false : process();
+        return (!paramsArray) ? false : process();
 
-	}
-	else
-	{          
+    } else {
 
-	    return process();
+        return process();
 
-	}
+    }
 
 };
 
-exports.isDefined 
-= exports.is_defined 
-= exports._IS_DEFINED
-= isDefined;
+//@ Check if the specified properties are defined in an object
+exports.isDefined = exports._IS_DEFINED = isDefined;
